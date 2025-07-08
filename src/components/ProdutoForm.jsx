@@ -42,13 +42,13 @@ const ProdutoForm = ({ modo }) => {
 
   // Carregar categorias e produto se modo editar
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/categoria`)
+    fetch(`${process.env.REACT_APP_API_URL}api/categorias`)
       .then((res) => res.json())
       .then(setCategorias)
       .catch(() => setErro("Erro ao carregar categorias."));
 
     if (modo === "editar") {
-      fetch(`${process.env.REACT_APP_API_URL}/api/produtos/${id}`, {
+      fetch(`${process.env.REACT_APP_API_URL}api/produtos/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((res) => res.json())
