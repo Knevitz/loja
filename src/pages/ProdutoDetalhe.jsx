@@ -78,7 +78,7 @@ const ProdutoDetalhe = () => {
         <Col md={6} className="text-center mb-4 mb-md-0">
           {produto.imagem ? (
             <img
-              src={`${API_URL}/uploads/${produto.imagem}`}
+              src={`${API_URL}uploads/${produto.imagem}`}
               alt={produto.nome || "Imagem do produto"}
               style={{
                 maxWidth: "100%",
