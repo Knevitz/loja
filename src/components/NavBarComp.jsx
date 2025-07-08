@@ -87,7 +87,7 @@ const NavBarComp = () => {
     const fetchCategorias = async () => {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_API_URL}categoria`
+          `${process.env.REACT_APP_API_URL}/api/categorias`
         );
         if (!res.ok) throw new Error("Erro ao carregar categorias");
         const data = await res.json();
