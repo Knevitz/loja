@@ -42,7 +42,7 @@ const ProdutoForm = ({ modo }) => {
 
   // Carregar categorias e produto se modo editar
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/categorias`)
+    fetch(`${process.env.REACT_APP_API_URL}/categoria`)
       .then((res) => res.json())
       .then(setCategorias)
       .catch(() => setErro("Erro ao carregar categorias."));
