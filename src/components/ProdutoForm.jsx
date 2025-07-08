@@ -193,8 +193,8 @@ const ProdutoForm = ({ modo }) => {
 
     const endpoint =
       modo === "editar"
-        ? `${process.env.REACT_APP_API_URL}/api/produtos/${id}`
-        : `${process.env.REACT_APP_API_URL}/api/produtos`;
+        ? `${process.env.REACT_APP_API_URL}api/produtos/${id}`
+        : `${process.env.REACT_APP_API_URL}api/produtos`;
 
     try {
       const res = await fetch(endpoint, {
