@@ -24,7 +24,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         // Buscar produtos ativos
-        const resProdutos = await api.get("/api/produtos/ativos");
+        const resProdutos = await api.get("api/produtos/ativos");
         const produtosData = Array.isArray(resProdutos.data)
           ? resProdutos.data
           : [];
