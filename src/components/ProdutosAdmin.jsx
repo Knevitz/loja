@@ -14,7 +14,7 @@ const ProdutosAdmin = () => {
     try {
       setCarregando(true);
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/produtos/admin`,
+        `${process.env.REACT_APP_API_URL}api/produtos/admin`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
