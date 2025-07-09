@@ -18,7 +18,7 @@ const ProdutoDetalhe = () => {
   useEffect(() => {
     const buscarProduto = async () => {
       try {
-        const res = await api.get(`/api/produtos/slug/${slug}`);
+        const res = await api.get(`api/produtos/slug/${slug}`);
         if (!res.data || typeof res.data !== "object") {
           throw new Error("Produto não encontrado.");
         }
@@ -141,7 +141,7 @@ const ProdutoDetalhe = () => {
           {produto.pdf && typeof produto.pdf === "string" && (
             <div className="mt-4">
               <a
-                href={`${API_URL}/uploads/${produto.pdf}`}
+                href={`${API_URL}uploads/${produto.pdf}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline-secondary w-100"
