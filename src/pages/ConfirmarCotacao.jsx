@@ -112,13 +112,6 @@ const ConfirmarCotacao = () => {
         <tbody>
           {itens.map((item) => (
             <tr key={item.codigo}>
-              <td>
-                <img
-                  src={`${process.env.REACT_APP_API_URL}/uploads/${item.imagem}`}
-                  alt={item.nome}
-                  style={{ width: "80px" }}
-                />
-              </td>
               <td>{item.nome}</td>
               <td>{item.codigo}</td>
               <td>{item.quantidade}</td>
