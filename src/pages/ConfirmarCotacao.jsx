@@ -48,7 +48,7 @@ const ConfirmarCotacao = () => {
     setMensagem(null);
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/cotacoes`,
+        `${process.env.REACT_APP_API_URL}api/cotacoes`,
         {
           method: "POST",
           headers: {
