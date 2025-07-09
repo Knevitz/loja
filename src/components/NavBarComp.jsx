@@ -138,7 +138,7 @@ const NavBarComp = () => {
                   <NavDropdown.Item
                     key={categoria.id}
                     as={NavLink}
-                    to={`/categoria/${categoria.slug}`}
+                    to={`categoria/${categoria.slug}`}
                     end
                   >
                     {categoria.nome}
