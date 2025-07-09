@@ -114,7 +114,18 @@ const ProdutosAdmin = () => {
             ) : (
               produtos.map((produto) => (
                 <tr key={produto.id}>
-                  <td>{produto.nome}</td>
+                  <td
+                    style={{
+                      maxWidth: "200px",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                    title={produto.nome}
+                  >
+                    {produto.nome}
+                  </td>
+
                   <td 
                    style={{
                      maxWidth: "300px",
