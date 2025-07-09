@@ -42,7 +42,7 @@ const ProdutosAdmin = () => {
 
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/produtos/${id}`,
+        `${process.env.REACT_APP_API_URL}api/produtos/${id}`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },
@@ -59,7 +59,7 @@ const ProdutosAdmin = () => {
   const toggleAtivo = async (id, ativoAtual) => {
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/produtos/${id}`,
+        `${process.env.REACT_APP_API_URL}api/produtos/${id}`,
         {
           method: "PATCH",
           headers: {
